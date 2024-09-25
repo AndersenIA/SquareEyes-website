@@ -61,13 +61,118 @@ body {
 /***********************************************************************************/
 /***********************************************************************************/
 
-.header-img {
-  display: block;
-  width: 100%;
+.header {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 100vh;
+  background-image: url(Images/lucas-teixeira-bernardino-nfJWQ9vC4Bo-unsplash.jpg);
+  background-image: -webkit-linear-gradient(
+      rgba(0, 0, 0, 0) 0%,
+      rgb(27, 27, 27) 100%
+    ),
+    url(Images/lucas-teixeira-bernardino-nfJWQ9vC4Bo-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.movie-title {
+  font-size: 4rem;
+  font-weight: 400;
 }
 
 .movie-info {
+  font-size: 2rem;
+  font-weight: 100;
+  padding-inline: 4.68rem;
   position: absolute;
   top: 50%;
   color: white;
+}
+
+.cta-btn,
+.info-btn {
+  cursor: pointer;
+  border: 1px solid #ffd64c;
+  border-radius: 10px;
+  background-color: #1b1b1b;
+  color: #ffd64c;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+}
+
+/***********************************************************************************/
+/***********************************************************************************/
+/*************************      ACTOR SECTION      *********************************/
+/***********************************************************************************/
+/***********************************************************************************/
+
+.section-actors {
+  margin-bottom: 10rem;
+}
+
+.actor-section {
+  display: flex;
+}
+
+.section-header {
+  color: white;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-left: 4.68rem;
+}
+
+.actors {
+  display: flex;
+  width: 10rem;
+  height: 10rem;
+  overflow: hidden;
+  margin-inline: 5rem;
+}
+
+.actors-img {
+  object-fit: cover;
+  width: 10rem;
+  height: 100%;
+}
+
+.fade {
+  position: absolute;
+  width: 100%;
+  height: 10.5rem;
+  background-image: linear-gradient(
+    0deg,
+    rgb(27, 27, 27),
+    rgba(27, 27, 27, 0.5)
+  );
+}
+
+/***********************************************************************************/
+/***********************************************************************************/
+/*************************      NEWS SECTION       *********************************/
+/***********************************************************************************/
+/***********************************************************************************/
+
+.section-news {
+  margin-block: 10rem;
+}
+
+.news-section {
+  display: flex;
+}
+
+.movie-div {
+  display: flex;
+  margin-inline: 5rem;
+}
+
+.movie-img {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5),
+    0 -4px 15px 0 rgba(255, 213, 76, 0.08);
+  border-radius: 1rem;
+  object-fit: cover;
+  width: 15rem;
+  height: 100%;
 }
