@@ -3,6 +3,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #1b1b1b;
+  overflow-x: hidden;
 }
 
 :link {
@@ -10,14 +11,24 @@ body {
   color: black;
 }
 
+/***********************************************************************************/
+/***********************************************************************************/
+/*************************       NAVIGATION        *********************************/
+/***********************************************************************************/
+/***********************************************************************************/
+
 .nav-bar {
+  /*background-color: rgb(27, 27, 27);*/
+  background-image: linear-gradient(rgb(27, 27, 27), rgba(27, 27, 27, 0.171));
+  position: fixed;
   display: flex;
   padding-inline: 4.68rem;
   padding-block: 1rem;
-  border: 1px red solid;
+  width: 92%;
 }
 
 .leftside-nav {
+  display: flex;
   align-items: center;
 }
 
@@ -29,4 +40,34 @@ body {
 .nav-link {
   padding-right: 1rem;
   color: #ffd64c;
+}
+
+.rightside-nav {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+}
+
+.nav-link-icons {
+  color: #ffd64c;
+  font-size: 2rem;
+  padding-right: 4rem;
+}
+
+/***********************************************************************************/
+/***********************************************************************************/
+/*************************         HEADER          *********************************/
+/***********************************************************************************/
+/***********************************************************************************/
+
+.header-img {
+  display: block;
+  width: 100%;
+}
+
+.movie-info {
+  position: absolute;
+  top: 50%;
+  color: white;
 }
