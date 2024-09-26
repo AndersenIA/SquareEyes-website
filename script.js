@@ -1,8 +1,10 @@
-const container = document.getElementById("container");
+const containers = document.querySelectorAll(".horizontal-scroll");
 
-container.addEventListener("wheel", (e) => {
-  if (e.deltaY !== 0) {
-    e.preventDefault();
-    container.scrollLeft += e.deltaY;
-  }
+containers.forEach((container) => {
+  container.addEventListener("wheel", (e) => {
+    if (e.deltaY !== 0) {
+      e.preventDefault();
+      container.scrollLeft += e.deltaY;
+    }
+  });
 });

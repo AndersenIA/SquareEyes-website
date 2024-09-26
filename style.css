@@ -1,3 +1,9 @@
+/***********************************************************************************/
+/***********************************************************************************/
+/*************************         GENERAL         *********************************/
+/***********************************************************************************/
+/***********************************************************************************/
+
 * {
   scroll-behavior: smooth;
 }
@@ -29,6 +35,10 @@ body {
   color: black;
 }
 
+li {
+  list-style: none;
+}
+
 /***********************************************************************************/
 /***********************************************************************************/
 /*************************       NAVIGATION        *********************************/
@@ -43,7 +53,7 @@ body {
   display: flex;
   padding-inline: 4.68rem;
   padding-block: 1rem;
-  width: 92%;
+  width: 93%;
 }
 
 .leftside-nav {
@@ -112,7 +122,7 @@ body {
 .cta-btn,
 .info-btn {
   cursor: pointer;
-  border: 1px solid #ffd64c;
+  border: 2px solid #ffd64c;
   border-radius: 10px;
   background-color: #1b1b1b;
   color: #ffd64c;
@@ -182,11 +192,15 @@ body {
 .news-section {
   display: flex;
   overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
   scroll-behavior: auto;
+  padding-top: 2.5rem;
 }
 
 .news-section::-webkit-scrollbar {
   width: 12px;
+  height: 15px;
 }
 
 .news-section::-webkit-scrollbar-track {
@@ -200,16 +214,53 @@ body {
 }
 
 .movie-div {
-  display: flex;
+  display: inline-block;
   margin-inline: 5rem;
   padding-bottom: 1rem;
 }
 
 .movie-img {
+  display: inline-block;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5),
     0 -4px 15px 0 rgba(255, 213, 76, 0.08);
   border-radius: 1rem;
   object-fit: cover;
   width: 15rem;
   height: 100%;
+  transition: all 0.5s ease;
+}
+
+.movie-img:hover {
+  transform: scale(105%);
+}
+
+/***********************************************************************************/
+/***********************************************************************************/
+/*************************      FOOTER SECTION     *********************************/
+/***********************************************************************************/
+/***********************************************************************************/
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-inline: 4.68rem;
+  padding-block: 5rem;
+}
+
+.footer-img {
+  height: 10rem;
+}
+
+.list-header {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 100;
+  padding-block: 0.5rem;
+}
+
+.list-items {
+  padding-block: 0.5rem;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 100;
 }
