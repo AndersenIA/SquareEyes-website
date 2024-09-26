@@ -18,8 +18,9 @@ body {
 /***********************************************************************************/
 
 .nav-bar {
+  z-index: 1000;
   /*background-color: rgb(27, 27, 27);*/
-  background-image: linear-gradient(rgb(27, 27, 27), rgba(27, 27, 27, 0.171));
+  background-image: linear-gradient(rgb(27, 27, 27), rgba(27, 27, 27, 0.404));
   position: fixed;
   display: flex;
   padding-inline: 4.68rem;
@@ -83,11 +84,11 @@ body {
 
 .movie-info {
   font-size: 2rem;
-  font-weight: 100;
+  font-weight: 200;
   padding-inline: 4.68rem;
   position: absolute;
-  top: 50%;
-  color: white;
+  top: 40%;
+  color: #cecece;
 }
 
 .cta-btn,
@@ -118,13 +119,14 @@ body {
 }
 
 .section-header {
-  color: white;
+  color: #cecece;
   font-size: 2rem;
   font-weight: 300;
   margin-left: 4.68rem;
 }
 
 .actors {
+  border: 3px solid #ffd64c;
   display: flex;
   width: 10rem;
   height: 10rem;
@@ -161,6 +163,7 @@ body {
 
 .news-section {
   display: flex;
+  overflow-x: auto;
 }
 
 .movie-div {
