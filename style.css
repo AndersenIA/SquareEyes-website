@@ -1,3 +1,21 @@
+* {
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(27, 27, 27);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  border: 3px solid rgb(27, 27, 27);
+}
+
 body {
   font-family: "Roboto", sans-serif;
   padding: 0;
@@ -164,11 +182,27 @@ body {
 .news-section {
   display: flex;
   overflow-x: auto;
+  scroll-behavior: auto;
+}
+
+.news-section::-webkit-scrollbar {
+  width: 12px;
+}
+
+.news-section::-webkit-scrollbar-track {
+  background: rgb(27, 27, 27);
+}
+
+.news-section::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  border: 3px solid rgb(27, 27, 27);
 }
 
 .movie-div {
   display: flex;
   margin-inline: 5rem;
+  padding-bottom: 1rem;
 }
 
 .movie-img {
