@@ -277,7 +277,7 @@ li {
 .sm-logo {
   color: #cecece;
   font-size: 2rem;
-  padding-bottom: 7rem;
+  padding: 0 1rem 7rem 0;
 }
 
 .label-email {
