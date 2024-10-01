@@ -305,3 +305,17 @@ li {
 /*************************      MOVIES.HTML        *********************************/
 /***********************************************************************************/
 /***********************************************************************************/
+
+.section-movies {
+  padding-inline: 4.68rem;
+  padding-block: 7rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.movie-display-div {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  margin-bottom: 3rem;
+}
