@@ -37,96 +37,58 @@
       </div>
     </nav>
 
-    <header class="header">
-      <div class="movie-info">
-        <h2 class="movie-title">Hobbs & Shaw</h2>
+    <section class="about-section">
+      <div class="movie-img-desc">
+        <img
+          class="movie-img"
+          src="Images/Square_Eyes_Cover1.jpeg"
+          alt="cover of movie"
+        />
         <p class="movie-desc">
           Lawman Luke Hobbs and outcast Deckard Shaw form an unlikely
           alliance<br />
           when a cyber-genetically enhanced villain threatens the future of
           humanity.
         </p>
-        <a href="#"> <button class="cta-btn">Buy Now!</button></a>
-        <a href="#"> <button class="info-btn">Read more</button></a>
       </div>
-    </header>
-
-    <section class="section-news">
-      <h3 class="section-header">Trending</h3>
-      <div class="news-section horizontal-scroll">
-        <div class="movie-div">
-          <a href="specific-movie.html">
-            <img
-              class="movie-img"
-              src="Images/Square_Eyes_Cover1.jpeg"
-              alt="movie cover of hobbes and shaw"
-          /></a>
-        </div>
-        <div class="movie-div">
-          <a href="specific-movie.html">
-            <img
-              class="movie-img"
-              src="Images/Square_Eyes_Cover2.jpeg"
-              alt="movie cover of godzilla"
-          /></a>
-        </div>
-        <div class="movie-div">
-          <a href="specific-movie.html">
-            <img
-              class="movie-img"
-              src="Images/Square_Eyes_Cover3.jpeg"
-              alt="movie cover of once upon a time in hollywood"
-          /></a>
-        </div>
-        <div class="movie-div">
-          <a href="specific-movie.html">
-            <img
-              class="movie-img"
-              src="Images/Square_Eyes_Cover4.jpeg"
-              alt="movie cover of Scream"
-          /></a>
-        </div>
-        <div class="movie-div">
-          <a href="specific-movie.html">
-            <img
-              class="movie-img"
-              src="Images/Square_Eyes_Cover5.jpeg"
-              alt="movie cover of Sweetheart"
-          /></a>
-        </div>
-        <div class="movie-div">
-          <a href="specific-movie.html">
-            <img
-              class="movie-img"
-              src="Images/Square_Eyes_Cover6.jpeg"
-              alt="movie cover of The Addams family"
-          /></a>
-        </div>
-        <div class="movie-div">
-          <a href="specific-movie.html">
-            <img
-              class="movie-img"
-              src="Images/Square_Eyes_Cover7.jpeg"
-              alt="movie cover of The Addams family"
-          /></a>
-        </div>
-        <div class="movie-div">
-          <a href="specific-movie.html">
-            <img
-              class="movie-img"
-              src="Images/Square_Eyes_Cover8.jpeg"
-              alt="movie cover of The Addams family"
-          /></a>
-        </div>
-        <div class="movie-div">
-          <a href="specific-movie.html">
-            <img
-              class="movie-img"
-              src="Images/Square_Eyes_Cover2.jpeg"
-              alt="movie cover of The Addams family"
-          /></a>
-        </div>
-      </div>
+      <form>
+        <h2>Checkout Form</h2>
+        <section>
+          <h3>Billing Information</h3>
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" /><br /><br />
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" /><br /><br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" /><br /><br />
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" /><br /><br />
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" /><br /><br />
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" /><br /><br />
+          <label for="state">State:</label>
+          <input type="text" id="state" name="state" /><br /><br />
+          <label for="zip">Zip:</label>
+          <input type="text" id="zip" name="zip" /><br /><br />
+        </section>
+        <section>
+          <h3>Payment Information</h3>
+          <label for="card-type">Card Type:</label>
+          <select id="card-type" name="card-type">
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="amex">American Express</option></select
+          ><br /><br />
+          <label for="card-number">Card Number:</label>
+          <input type="text" id="card-number" name="card-number" /><br /><br />
+          <label for="expiration">Expiration Date:</label>
+          <input type="month" id="expiration" name="expiration" /><br /><br />
+          <label for="cvv">CVV:</label>
+          <input type="text" id="cvv" name="cvv" /><br /><br />
+        </section>
+        <input type="submit" value="Place Order" />
+      </form>
     </section>
 
     <footer class="footer">
