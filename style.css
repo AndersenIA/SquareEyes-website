@@ -278,6 +278,7 @@ li {
   color: #cecece;
   font-size: 2rem;
   padding: 0 1rem 7rem 0;
+  cursor: pointer;
 }
 
 .label-email {
@@ -298,6 +299,7 @@ li {
   background-color: #ffd64c;
   color: #1b1b1b;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 /***********************************************************************************/
@@ -338,11 +340,63 @@ li {
   padding-right: 3rem;
 }
 
+.about-logo-img {
+  height: 25rem;
+}
+
 .about-text {
   padding-inline: 3rem;
   color: #cecece;
+  padding-top: 7rem;
 }
 
 .contactus-btn {
   color: #ffd64c;
+}
+
+/***********************************************************************************/
+/***********************************************************************************/
+/*************************      CONTACT.HTML       *********************************/
+/***********************************************************************************/
+/***********************************************************************************/
+
+.contact-form {
+  display: grid;
+  padding: 10rem 4.68rem 5rem 4.68rem;
+  justify-content: center;
+}
+
+.form-header {
+  font-size: 2.5rem;
+  font-weight: 200;
+  color: #cecece;
+  text-align: center;
+}
+
+.form-label {
+  color: #cecece;
+  font-size: 1rem;
+}
+
+.form-input {
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: none;
+}
+
+.input-msg {
+  padding: 0.5rem;
+  border-radius: 10px;
+  height: 5rem;
+  width: 20rem;
+}
+
+.form-btn {
+  width: 5rem;
+  height: 2rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  justify-self: center;
 }

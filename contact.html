@@ -37,31 +37,34 @@
       </div>
     </nav>
 
-    <section class="about-section">
-      <div class="about-logo">
-        <img
-          class="about-logo-img"
-          src="Images/SquareEyes_Logo.png"
-          alt="SquareEyes Logo"
-        />
-      </div>
-      <div class="about-text">
-        <h2 class="about-header">About Square Eyes</h2>
-        <p class="about-p">
-          At Square Eyes, we're passionate about bringing the magic of movies to
-          your doorstep. Our mission is to provide a seamless and enjoyable
-          movie renting experience, offering a vast library of new releases and
-          classic films to cater to diverse tastes. With a user-friendly
-          interface and personalized recommendations, we strive to make movie
-          nights easier and more enjoyable for our customers. Our team is
-          dedicated to delivering exceptional service, ensuring that every
-          interaction with us is a positive one. Whether you're a film
-          enthusiast or just looking for a cozy night in, we invite you to
-          explore our collection and discover new favorites.
-        </p>
-        <a class="contactus-btn" href="contact.html">Contact us</a>
-      </div>
-    </section>
+    <form class="contact-form">
+      <h2 class="form-header">Contact us!</h2>
+      <label class="form-label" for="name">Name:</label>
+      <input
+        placeholder="Full Name"
+        class="form-input"
+        type="text"
+        id="name"
+        name="name"
+      /><br /><br />
+      <label class="form-label" for="email">Email:</label>
+      <input
+        placeholder="Email Address"
+        class="form-input"
+        type="email"
+        id="email"
+        name="email"
+      /><br /><br />
+      <label class="form-label" for="message">Message:</label>
+      <textarea
+        placeholder="Message..."
+        class="input-msg"
+        id="message"
+        name="message"
+      ></textarea
+      ><br /><br />
+      <input class="form-btn" type="submit" value="Send" />
+    </form>
 
     <footer class="footer">
       <div class="footer-logo">
