@@ -482,3 +482,45 @@ li {
   border: inset 1px #ffd64c;
   color: #cecece;
 }
+
+/***********************************************************************************/
+/***********************************************************************************/
+/*************************      SUCCESS.HTML       *********************************/
+/***********************************************************************************/
+/***********************************************************************************/
+
+.success-header {
+  padding-top: 10rem;
+  font-size: 2rem;
+  color: #cecece;
+  text-align: center;
+}
+
+.success-msg {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 20rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.home-btn-div {
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.home-btn {
+  font-size: 2rem;
+  color: #1b1b1b;
+  font-weight: 300;
+  background-color: #cecece;
+  padding-inline: 1rem;
+  padding-block: 0.2rem;
+  border-radius: 10px;
+}
+
+.home-btn:hover {
+  background-color: #1b1b1b;
+  color: #cecece;
+  border: inset 1px #ffd64c;
+}
