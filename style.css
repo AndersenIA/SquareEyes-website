@@ -406,3 +406,79 @@ li {
 /*************************     CHECKOUT.HTML       *********************************/
 /***********************************************************************************/
 /***********************************************************************************/
+
+.checkout-section {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 20rem;
+  padding-top: 14rem;
+  padding-bottom: 2rem;
+}
+
+.movie-desc {
+  color: #cecece;
+}
+
+.movie-img-desc {
+}
+
+.movie-img-checkout {
+  height: 20rem;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5),
+    0 -4px 15px 0 rgba(255, 213, 76, 0.08);
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.price {
+  color: #ffd64c;
+  font-size: 2rem;
+}
+
+.center-line {
+  width: 0.1rem;
+  height: auto;
+  background-image: linear-gradient(#1b1b1b, #cecece, #1b1b1b);
+}
+
+.checkout-form {
+  width: 30rem;
+}
+
+.checkout-header {
+  color: #cecece;
+}
+
+.billing-header {
+  color: #cecece;
+}
+
+.checkout-label {
+  color: #cecece;
+}
+
+.checkout-input {
+  width: 20rem;
+  padding: 0.4rem;
+  border: none;
+  border-radius: 8px;
+}
+
+.input-short {
+  width: 8rem;
+}
+
+.order-btn {
+  width: 7rem;
+  height: 2rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.order-btn:hover {
+  background-color: #1b1b1b;
+  border: inset 1px #ffd64c;
+  color: #cecece;
+}

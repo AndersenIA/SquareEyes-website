@@ -37,13 +37,14 @@
       </div>
     </nav>
 
-    <section class="about-section">
+    <section class="checkout-section">
       <div class="movie-img-desc">
         <img
-          class="movie-img"
+          class="movie-img-checkout"
           src="Images/Square_Eyes_Cover1.jpeg"
           alt="cover of movie"
         />
+        <p class="price">$29.99</p>
         <p class="movie-desc">
           Lawman Luke Hobbs and outcast Deckard Shaw form an unlikely
           alliance<br />
@@ -51,43 +52,61 @@
           humanity.
         </p>
       </div>
-      <form>
-        <h2>Checkout Form</h2>
-        <section>
-          <h3>Billing Information</h3>
-          <label for="first-name">First Name:</label>
-          <input type="text" id="first-name" name="first-name" /><br /><br />
-          <label for="last-name">Last Name:</label>
-          <input type="text" id="last-name" name="last-name" /><br /><br />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" /><br /><br />
-          <label for="phone">Phone:</label>
-          <input type="tel" id="phone" name="phone" /><br /><br />
-          <label for="address">Address:</label>
-          <input type="text" id="address" name="address" /><br /><br />
-          <label for="city">City:</label>
-          <input type="text" id="city" name="city" /><br /><br />
-          <label for="state">State:</label>
-          <input type="text" id="state" name="state" /><br /><br />
-          <label for="zip">Zip:</label>
-          <input type="text" id="zip" name="zip" /><br /><br />
-        </section>
-        <section>
-          <h3>Payment Information</h3>
-          <label for="card-type">Card Type:</label>
-          <select id="card-type" name="card-type">
-            <option value="visa">Visa</option>
-            <option value="mastercard">Mastercard</option>
-            <option value="amex">American Express</option></select
-          ><br /><br />
-          <label for="card-number">Card Number:</label>
-          <input type="text" id="card-number" name="card-number" /><br /><br />
-          <label for="expiration">Expiration Date:</label>
-          <input type="month" id="expiration" name="expiration" /><br /><br />
-          <label for="cvv">CVV:</label>
-          <input type="text" id="cvv" name="cvv" /><br /><br />
-        </section>
-        <input type="submit" value="Place Order" />
+
+      <div class="center-line"></div>
+
+      <form class="checkout-form" action="success.html">
+        <h2 class="checkout-header">Checkout</h2>
+
+        <h3 class="billing-header">Billing Information</h3>
+        <label class="checkout-label" for="first-name">First Name:</label>
+        <br />
+        <input
+          class="checkout-input"
+          type="text"
+          id="first-name"
+          name="first-name"
+        /><br /><br />
+        <label class="checkout-label" for="email">Email:</label> <br />
+        <input
+          class="checkout-input"
+          type="email"
+          id="email"
+          name="email"
+        /><br /><br />
+        <label class="checkout-label" for="address">Address:</label> <br />
+        <input
+          class="checkout-input"
+          type="text"
+          id="address"
+          name="address"
+        /><br /><br />
+
+        <label class="checkout-label" for="card-number">Card Number:</label>
+        <br />
+        <input
+          class="checkout-input"
+          type="text"
+          id="card-number"
+          name="card-number"
+        /><br /><br />
+        <label class="checkout-label" for="expiration">Expiration Date:</label>
+        <br />
+        <input
+          class="checkout-input input-short"
+          type="month"
+          id="expiration"
+          name="expiration"
+        /><br /><br />
+        <label class="checkout-label" for="cvv">CVV:</label> <br />
+        <input
+          class="checkout-input input-short"
+          type="text"
+          id="cvv"
+          name="cvv"
+        /><br /><br />
+
+        <input class="order-btn" type="submit" value="Place Order" />
       </form>
     </section>
 
