@@ -41,10 +41,8 @@
 /***********************************************************************************/
 
 .mobile-header {
-  visibility: hidden;
   display: none;
   align-items: center;
-  width: auto;
   background-image: -webkit-linear-gradient(
       rgba(0, 0, 0, 0) 0%,
       rgb(27, 27, 27) 100%
@@ -66,7 +64,7 @@
     0 -4px 15px 0 rgba(255, 213, 76, 0.08);
   border-radius: 1rem;
   object-fit: cover;
-  width: 20rem;
+  width: 15rem;
   height: 100%;
 }
 
@@ -140,8 +138,8 @@
 
 @media (max-width: 1024px) {
   .mobile-header {
-    display: flex;
-    visibility: visible;
+    display: grid;
+    width: -webkit-fill-available;
   }
 
   .mobile_nav-bar {
@@ -175,5 +173,19 @@
 
   .footer {
     padding-block: 3rem;
+  }
+}
+
+@media (max-width: 830px) {
+  .email-input {
+    font-size: 0.8rem;
+  }
+
+  .movie-img {
+    width: 9rem;
+  }
+
+  .header_movie-img {
+    width: 13rem;
   }
 }

@@ -256,6 +256,10 @@ li {
   height: 10rem;
 }
 
+.footer-list {
+  padding-right: 2rem;
+}
+
 .list-header {
   color: #cecece;
   font-size: 1.2rem;
