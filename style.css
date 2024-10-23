@@ -105,6 +105,15 @@ li {
   background-size: cover;
 }
 
+.header_specific_movie {
+  background-image: url(Images/cash-macanaya-gzXfknZpnFY-unsplash.jpg);
+  background-image: -webkit-linear-gradient(
+      rgba(0, 0, 0, 0) 0%,
+      rgb(27, 27, 27) 100%
+    ),
+    url(Images/cash-macanaya-gzXfknZpnFY-unsplash.jpg);
+}
+
 .movie-title {
   font-size: 4rem;
   font-weight: 400;
