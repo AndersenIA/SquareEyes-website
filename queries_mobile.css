@@ -189,3 +189,40 @@
     width: 13rem;
   }
 }
+
+@media (max-width: 730px) {
+  .header_movie-div {
+    margin-left: 5rem;
+    margin-right: 0rem;
+  }
+
+  .footer {
+    padding-block: 2rem;
+  }
+
+  .footer-img {
+    height: 10%;
+  }
+
+  .list-items {
+    font-size: .5rem;
+  }
+
+  .mobile-movie-desc {
+    font-size: 1rem;
+  }
+
+  .section-news {
+    margin-block: 5rem;
+  }
+}
+
+@media (max-width: 672px) {
+  .mobile-cta-btn, .mobile-info-btn {
+    font-size: 1rem;
+  }
+
+  .footer {
+    padding-inline: 2rem;
+  }
+}
