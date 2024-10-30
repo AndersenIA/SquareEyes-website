@@ -106,12 +106,12 @@ li {
 }
 
 .header_specific_movie {
-  background-image: url(Images/cash-macanaya-gzXfknZpnFY-unsplash.jpg);
+  background-image: url(Images/brianna-marble-otHJjKfU7kk-unsplash.jpg);
   background-image: -webkit-linear-gradient(
       rgba(0, 0, 0, 0) 0%,
       rgb(27, 27, 27) 100%
     ),
-    url(Images/cash-macanaya-gzXfknZpnFY-unsplash.jpg);
+    url(Images/brianna-marble-otHJjKfU7kk-unsplash.jpg);
 }
 
 .movie-title {
@@ -352,6 +352,8 @@ li {
 }
 
 .about-logo {
+  display: flex;
+  justify-content: center;
   padding-right: 3rem;
 }
 
@@ -502,6 +504,9 @@ li {
 /***********************************************************************************/
 
 .success-header {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
   padding-top: 10rem;
   font-size: 2rem;
   color: #cecece;
@@ -510,10 +515,14 @@ li {
 
 .success-msg {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding-inline: 20rem;
   padding-top: 5rem;
   padding-bottom: 2rem;
+}
+
+.success-msg-dsc {
+  padding-left: 5rem;
 }
 
 .home-btn-div {
