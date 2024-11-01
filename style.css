@@ -95,23 +95,23 @@ li {
   align-items: center;
   width: auto;
   height: 100vh;
-  background-image: url(Images/lucas-teixeira-bernardino-nfJWQ9vC4Bo-unsplash.jpg);
+  background-image: url(Images/lucas-teixeira-bernardino-nfJWQ9vC4Bo-unsplash_Resized.jpg);
   background-image: -webkit-linear-gradient(
       rgba(0, 0, 0, 0) 0%,
       rgb(27, 27, 27) 100%
     ),
-    url(Images/lucas-teixeira-bernardino-nfJWQ9vC4Bo-unsplash.jpg);
+    url(Images/lucas-teixeira-bernardino-nfJWQ9vC4Bo-unsplash_Resized.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .header_specific_movie {
-  background-image: url(Images/brianna-marble-otHJjKfU7kk-unsplash.jpg);
+  background-image: url(Images/brianna-marble-otHJjKfU7kk-unsplash_Resized.jpg);
   background-image: -webkit-linear-gradient(
       rgba(0, 0, 0, 0) 0%,
       rgb(27, 27, 27) 100%
     ),
-    url(Images/brianna-marble-otHJjKfU7kk-unsplash.jpg);
+    url(Images/brianna-marble-otHJjKfU7kk-unsplash_Resized.jpg);
 }
 
 .movie-title {
