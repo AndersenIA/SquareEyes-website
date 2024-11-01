@@ -326,8 +326,9 @@ li {
 .section-movies {
   padding-inline: 4.68rem;
   padding-block: 7rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .movie-display-div {
