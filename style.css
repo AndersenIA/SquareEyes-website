@@ -546,3 +546,38 @@ li {
   color: #cecece;
   border: inset 1px #ffd64c;
 }
+
+/***********************************************************************************/
+/***********************************************************************************/
+/*************************          CART           *********************************/
+/***********************************************************************************/
+/***********************************************************************************/
+
+.cart-popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  right: 0px;
+  width: 25rem;
+  height: 30rem;
+  border: 2px solid #ffd64c;
+  border-top: none;
+  border-right: none;
+  background-color: #1b1b1b;
+  box-shadow: 0 5px 50px -5px rgba(0, 0, 0, 0.849);
+  padding: 20px;
+  z-index: 1000;
+}
+
+.cart_h2 {
+  color: #cecece;
+}
+
+.cart_btn {
+  color: #ffd64c;
+  background-color: #1b1b1b;
+  border: 1px solid #ffd64c;
+  padding-inline: 1rem;
+  padding-block: 0.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}

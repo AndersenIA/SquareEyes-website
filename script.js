@@ -22,3 +22,13 @@ openMenu.addEventListener("click", function () {
 closeMenu.addEventListener("click", function () {
   mobileMenu.classList.remove("display-block");
 });
+
+document.getElementById("cartIcon").addEventListener("click", function () {
+  const cartPopup = document.getElementById("cartPopup");
+  cartPopup.style.display =
+    cartPopup.style.display === "block" ? "none" : "block";
+});
+
+document.getElementById("closeCart").addEventListener("click", function () {
+  document.getElementById("cartPopup").style.display = "none";
+});
