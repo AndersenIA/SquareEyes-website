@@ -82,6 +82,7 @@ li {
   color: #ffd64c;
   font-size: 2rem;
   padding-right: 4rem;
+  cursor: pointer;
 }
 
 /***********************************************************************************/
@@ -566,6 +567,8 @@ li {
   box-shadow: 0 5px 50px -5px rgba(0, 0, 0, 0.849);
   padding: 20px;
   z-index: 1000;
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 .cart_h2 {

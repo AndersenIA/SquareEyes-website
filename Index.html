@@ -35,9 +35,12 @@
         <a class="nav-link" href="about.html">About</a>
       </div>
       <div class="rightside-nav">
-        <a href="#" class="nav-link-icons"
-          ><ion-icon name="cart-outline" id="cartIcon"></ion-icon></a
-        ><a href="movies.html" class="nav-link-icons"
+        <ion-icon
+          class="nav-link-icons"
+          name="cart-outline"
+          id="cartIcon"
+        ></ion-icon>
+        <a href="movies.html" class="nav-link-icons"
           ><ion-icon name="compass-outline"></ion-icon></a
         ><a href="#" class="nav-link-icons"
           ><ion-icon name="person-circle-outline"></ion-icon
@@ -105,11 +108,9 @@
 
     <div class="cart-popup" id="cartPopup">
       <h2 class="cart_h2">Your Cart</h2>
-      <ul id="cartItems">
-        <li class="cart_li">Item 1</li>
-        <li class="cart_li">Item 2</li>
-        <li class="cart_li">Item 3</li>
-      </ul>
+      <div id="cartContent">
+        <!-- Cart items will be populated here -->
+      </div>
       <button class="cart_btn" id="closeCart">Close</button>
       <a href="checkout.html"><button class="cart_btn">Checkout</button></a>
     </div>
