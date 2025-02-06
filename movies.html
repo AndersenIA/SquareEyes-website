@@ -35,9 +35,12 @@
         <a class="nav-link" href="about.html">About</a>
       </div>
       <div class="rightside-nav">
-        <a href="#" class="nav-link-icons"
-          ><ion-icon name="search-outline"></ion-icon></a
-        ><a href="movies.html" class="nav-link-icons"
+        <ion-icon
+          class="nav-link-icons"
+          name="cart-outline"
+          id="cartIcon"
+        ></ion-icon>
+        <a href="movies.html" class="nav-link-icons"
           ><ion-icon name="compass-outline"></ion-icon></a
         ><a href="#" class="nav-link-icons"
           ><ion-icon name="person-circle-outline"></ion-icon
@@ -103,8 +106,17 @@
       </div>
     </nav>
 
-    <section class="section-movies">
-      <div class="movie-display-div">
+    <div class="cart-popup" id="cartPopup">
+      <h2 class="cart_h2">Your Cart</h2>
+      <div id="cartContent">
+        <!-- Cart items will be populated here -->
+      </div>
+      <button class="cart_btn" id="closeCart">Close</button>
+      <a href="checkout.html"><button class="cart_btn">Checkout</button></a>
+    </div>
+
+    <section class="section-movies" id="main">
+      <!-- <div class="movie-display-div">
         <a href="specific-movie.html">
           <img
             class="movie-img"
@@ -199,7 +211,7 @@
             src="Images/Square_Eyes_Cover8.jpeg"
             alt="movie cover of The Addams family"
         /></a>
-      </div>
+      </div> -->
     </section>
 
     <footer class="footer">

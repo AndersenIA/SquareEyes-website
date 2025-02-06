@@ -35,6 +35,17 @@ document.getElementById("closeCart").addEventListener("click", function () {
 
 // CONNECTING THE API
 
+// API KEY: 5a452143-fc8c-4a17-a666-6a88c639e7be
+
+/* EXAMPLE API OPTIONS FROM THE WEBSITE
+const options = {
+  headers: {
+    'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW5kZXJzZW5JQSIsImVtYWlsIjoiYW5kYW5kMDQxNzVAc3R1ZC5ub3JvZmYubm8iLCJpYXQiOjE3MzcxMTMwOTB9.4rCJAApJXWas0PsqVHR8c8A1QQglriMw6BWpu9JX1jo',
+    'X-Noroff-API-Key': '5a452143-fc8c-4a17-a666-6a88c639e7be'
+  }
+};
+*/
+
 /*
 fetch("https://v2.api.noroff.dev/square-eyes")
   .then(function (response) {
@@ -177,13 +188,73 @@ fetch("https://v2.api.noroff.dev/square-eyes")
   });
   */
 
+const API_KEY = "api_key=5a452143-fc8c-4a17-a666-6a88c639e7be";
+const BASE_URL = "https://v2.api.noroff.dev/square-eyes";
+const main = document.getElementById("main");
+const sectionNews = document.getElementById("sectionNews");
+
+getMovies(BASE_URL);
+
+function getMovies(url) {
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data.data);
+      showMovies(data.data);
+    });
+}
+
+function showMovies(data) {
+  main.innerHTML = "";
+
+  data.forEach((movie) => {
+    const { title, image } = movie;
+    const movieEl = document.createElement("div");
+    const movieNews = document.createElement("div");
+
+    movieEl.classList.add("movie-display-div");
+    movieEl.innerHTML = `
+      <a href="specific-movie.html">
+          <img
+            class="movie-img"
+            src="${image.url}"
+            alt="${title}"
+        /></a>
+    `;
+
+    main.appendChild(movieEl);
+  });
+}
+
+//THIS IS WORKING!!!!
+
+/*
 fetch("https://v2.api.noroff.dev/square-eyes")
   .then(function (response) {
     return response.json();
   })
   .then(function (jsonData) {
     console.log(jsonData); // Log the entire response to check its structure
+    for (items in jsonData.data) {
+      var productTitle = jsonData.data[items].title;
+      var products = document.createElement("li");
+      products.innerHTML = productTitle;
+      document.body.appendChild(products);
+    }
 
+    jsonData.data.forEach(
+      (item) => {
+        var productImg = item.image; // Access the image property
+
+        var image = document.createElement("img");
+        image.setAttribute("src", productImg.url); // Use productImg.url
+        image.setAttribute("alt", item.title); // Optional: set alt text for accessibility
+        document.body.appendChild(image); // Append the image to the body or a specific container
+      }
+
+      //THIS IS WORKING!!!
+
+      /*
     // Check if jsonData.data exists and is an array
     if (jsonData.data && Array.isArray(jsonData.data)) {
       jsonData.data.forEach((item) => {
@@ -207,4 +278,6 @@ fetch("https://v2.api.noroff.dev/square-eyes")
   })
   .catch(function (error) {
     console.error("Error fetching data:", error);
-  });
+  });*/
+//    );
+//  });
